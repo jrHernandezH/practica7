@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alemania</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 50px;
+            background-color: #f5f5f5;
+        }
+
+        section,
+        article {
+            flex-basis: calc(50% - 30px);
+            margin-bottom: 30px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        section img,
+        article img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        section h2,
+        article h2 {
+            margin: 0;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        section p,
+        article p {
+            margin: 0;
+            padding: 10px;
+            font-size: 18px;
+            line-height: 1
+        }
+
+        #button {
+            display: inline-block;
+            background-color: #000;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            border-radius: 4px;
+            margin: 30px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            transition: background-color .3s;
+            z-index: 1000;
+        }
+
+        #button:hover {
+            cursor: pointer;
+            background-color: #333;
+        }
+
+        #button:active {
+            background-color: #555;
+        }
+
+        #button::after {
+            content: "\f077";
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 2em;
+            line-height: 50px;
+            color: #fff;
+        }
+    </style>
+
+<body>
+    <main>
+        <section>
+            <h2>Castillo de alemania </h2>
+            <img src="/practica7/img/pexels-lukas-hartmann-1624735.jpg" alt="Imagen de ejemplo">
+        </section>
+        <article>
+            <h2>Informacion de Alemania</h2>
+            <p>Alemania es un país ubicado en Europa Central, y es uno de los países más poblados de Europa, con una
+                población de alrededor de 83 millones de personas. La capital de Alemania es Berlín, y otras ciudades
+                importantes incluyen Frankfurt, Hamburgo, Múnich y Colonia.</p>
+            <p>
+                Alemania es una economía de mercado social y es la cuarta economía más grande del mundo. El país es
+                conocido por su producción y exportación de productos de alta tecnología, automóviles, maquinaria y
+                productos químicos.
+            </p>
+            <p>
+                El gobierno de Alemania es una república federal parlamentaria, liderada por un Canciller. El actual
+                Canciller de Alemania es Olaf Scholz.
+            </p>
+            <p>
+                Alemania es conocida por su rica historia y cultura, que incluye la música, la literatura, la filosofía,
+                la arquitectura, la ciencia y la tecnología. El país también tiene un papel importante en la política
+                mundial y es miembro de la Unión Europea, la OTAN y el G7.
+            </p>
+            <p>
+                Alemania es famosa por sus festivales y tradiciones culturales, como Oktoberfest, el carnaval de
+                Colonia, la música clásica y la cultura de la cerveza. El país también tiene una amplia gama de paisajes
+                naturales, que incluyen los Alpes, los bosques negros y los ríos y lagos de la región de Mecklemburgo.
+            </p>
+            <p>
+                En los últimos años, Alemania ha enfrentado desafíos en temas como la inmigración, la integración y la
+                crisis económica en Europa. Sin embargo, el país sigue siendo uno de los líderes mundiales en
+                innovación, ciencia y tecnología, y sigue siendo un destino popular para el turismo y los negocios.</p>
+            </p>
+        </article>
+    </main>
+    <div class="container-return">
+        <a id="button" href="/practica7/index.html"></a>
+    </div>
+</body>
+
+</html>

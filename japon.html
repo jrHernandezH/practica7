@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Japon</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 50px;
+            background-color: #f5f5f5;
+        }
+
+        section,
+        article {
+            flex-basis: calc(50% - 30px);
+            margin-bottom: 30px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        section img,
+        article img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        section h2,
+        article h2 {
+            margin: 0;
+            padding: 20px;
+            background-color: #DC143C;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        section p,
+        article p {
+            margin: 0;
+            padding: 10px;
+            font-size: 18px;
+            line-height: 1
+        }
+
+        #button {
+            display: inline-block;
+            background-color: #DC143C;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            border-radius: 4px;
+            margin: 30px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            transition: background-color .3s;
+            z-index: 1000;
+        }
+
+        #button:hover {
+            cursor: pointer;
+            background-color: #333;
+        }
+
+        #button:active {
+            background-color: #555;
+        }
+
+        #button::before {
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 10px 10px 10px;
+            border-color: transparent transparent #FF5733 transparent;
+            transform: rotate(45deg);
+        }
+    </style>
+
+<body>
+    <main>
+        <section>
+            <h2>Tokyo tradicional </h2>
+            <img src="/practica7/img/pexels-tomáš-malík-3408353.jpg" alt="Imagen de ejemplo">
+        </section>
+        <article>
+            <h2>Informacion de Japon</h2>
+            <p>Japón es un país insular ubicado en el este de Asia, compuesto por cuatro islas principales y numerosas
+                islas más pequeñas. Tiene una población de alrededor de 126 millones de personas, y su capital es Tokio.
+            </p>
+            <p>
+                Japón es una economía altamente desarrollada y es la tercera economía más grande del mundo después de
+                Estados Unidos y China. El país es conocido por su producción y exportación de tecnología, automóviles,
+                electrónica, maquinaria y productos químicos.
+            </p>
+            <p>
+                El gobierno de Japón es una monarquía constitucional parlamentaria, liderada por un Primer Ministro. El
+                actual Primer Ministro de Japón es Fumio Kishida.
+            </p>
+            <p>
+                Japón es famoso por su tecnología de vanguardia y su innovación en áreas como la electrónica, la
+                robótica y la inteligencia artificial. El país también es conocido por sus tradiciones culturales, como
+                la ceremonia del té, la pintura sumi-e y la arquitectura tradicional.
+            </p>
+            <p>
+                En los últimos años, Japón ha enfrentado desafíos económicos y demográficos, como el envejecimiento de
+                la población y la disminución de la tasa de natalidad. El país también ha experimentado desastres
+                naturales como terremotos, tsunamis y tifones. Sin embargo, Japón sigue siendo una fuerza global en
+                tecnología, cultura y economía.</p>
+            </p>
+        </article>
+    </main>
+    <div class="container-return">
+        <a id="button" href="/practica7/index.html"></a>
+    </div>
+</body>
+
+</html>
